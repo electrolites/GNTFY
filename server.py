@@ -1,4 +1,4 @@
-from GNTFY import message
+from gntfy.message import Message
 import httpx
 
 class Server():
@@ -6,5 +6,5 @@ class Server():
 		self.url=url
 		self.topic=topic
 
-	def send(self, message: ntfy.message):
+	def send(self, message: Message):
 		httpx.post(f"{url}/{topic}", data=message.message, headers=message.headers)

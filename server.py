@@ -7,4 +7,4 @@ class Server:
 		self.topic=topic
 
 	def send(self, message: Message):
-		httpx.post(f"{url}/{topic}", data=message.message, headers=message.headers)
+		httpx.post(f"{self.url}/{self.topic}", data=message.message, headers=message.headers)

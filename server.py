@@ -2,7 +2,7 @@ from GNTFY import message
 import httpx
 
 class Server():
-	def __init(self, url: str="https://ntfy.sh", topic: str|None=None)
+	def __init(self, topic: str, url: str="https://ntfy.sh"):
 		self.url=url
 		self.topic=topic
 

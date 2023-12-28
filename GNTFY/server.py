@@ -1,4 +1,4 @@
-from GNTFY.message import Message
+from .message import Message
 import httpx
 
 class Server:
